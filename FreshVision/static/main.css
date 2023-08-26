@@ -156,4 +156,110 @@ section {
 
 h2 {
   color: #333;
+  font-family: 'Leckerli One', cursive;
+}
+
+.table-of-contents {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 0;
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space items evenly within the container */
+  border-radius: 10px; /* Round all four corners */
+}
+
+.table-of-contents ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center; /* Align items vertically in the middle */
+}
+
+.table-of-contents li {
+  margin: 0 20px;
+}
+
+.table-of-contents a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.logout {
+  display: flex;
+  align-items: center; /* Align items vertically in the middle */
+  padding-right: 20px;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+}
+
+.about-description {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.about-image {
+  flex: 1;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.team-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px;
+}
+
+.team-member {
+  flex: 0 0 calc(25% - 20px); /* Adjust to control the number of members per row */
+  margin: 10px;
+  text-align: center;
+}
+
+.team-member img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%; /* Round the image */
+}
+
+.team-member h3 {
+  margin-top: 10px;
+  font-family: 'Inter', cursive;
+}
+
+.team-member p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+h2 {
+color: #333;
+font-family: 'Inter', cursive;
+font-size: 70px;
 }

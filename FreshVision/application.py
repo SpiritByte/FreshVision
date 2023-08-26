@@ -84,5 +84,15 @@ def logout():
     session.clear()
     return redirect("/")
 
+@app.route('/about')
+@login_required
+def about():
+    return render_template("about.html")
+
+@app.route('/contact')
+@login_required
+def contact():
+    return render_template("contact.html")
+
 if __name__ == '__main__':
     app.run(debug=True)  
