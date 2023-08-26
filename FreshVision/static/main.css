@@ -114,3 +114,46 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;      
 }
+
+/* Paste the provided CSS styles here */
+
+/* Additional styles for the table of contents */
+.table-of-contents {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.table-of-contents ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.table-of-contents li {
+  margin: 0 20px;
+}
+
+.table-of-contents a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Additional styles for the content */
+.content {
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: #333;
+}
