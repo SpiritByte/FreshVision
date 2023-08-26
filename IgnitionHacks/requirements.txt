@@ -1,0 +1,3 @@
+Flask
+Flask_sqlalchemy
+Flask_session
