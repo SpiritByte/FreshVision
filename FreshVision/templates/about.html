@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freshvision</title>
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='/favicon.ico')}}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='/main.css')}}">
+</head>
+<body>
+  <div class="table-of-contents">
+    <ul>
+      <li><a href="/about">About Us</a></li>
+      <li><a href="/">Dashboard</a></li>
+      <li><a href="/contact">Contact Us</a></li>
+    </ul>
+    <div class="logout">
+      <a href="/logout">Logout</a> <!-- Moved Logout link to the right -->
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="about-section">
+        <div class="about-description">
+          <h2>About Us</h2>
+          <p>FreshVision, established in 2023, is a company founded by four high school students dedicated to reducing food waste to achieve SDG 12: Responsible Consumption and Production. Using our special anti-freeze cameras, we take photos of your fresh produce and notify you when it ripens so that you can use your food effectively and don’t let it go to waste. We also suggest recipes you can use so that you don’t worry about what to cook!</p>
+        </div>
+        <div class="about-image">
+            <img src="{{ url_for('static', filename='freshvision.jpg') }}" alt="FreshVision">
+        </div>
+      </div>
+
+      
+  <div class="team-section">
+    <div class="team-member">
+        <img src="{{ url_for('static', filename='alex.jpg') }}" alt="Alexander">
+      <h3>Alexander Li</h3>
+      <p>Co-Founder</p>
+    </div>
+    <div class="team-member">
+        <img src="{{ url_for('static', filename='jinay.jpg') }}" alt="Jinay">
+      <h3>Jinay Desai</h3>
+      <p>Co-Founder</p>
+    </div>
+    <div class="team-member">
+        <img src="{{ url_for('static', filename='nupoor.jpg') }}" alt="Nupoor">
+      <h3>Nupoor Patil</h3>
+      <p>Co-Founder</p>
+    </div>
+    <div class="team-member">
+        <img src="{{ url_for('static', filename='arwin.jpg') }}" alt="Arwin">
+      <h3>Arwin Karir</h3>
+      <p>Co-Founder</p>
+    </div>
+  </div>
+  </div>
+  <div class="footer">
+    <div class="social-links">
+      <a href="/about">About Us</a>
+      <a href="/">Dashboard</a>
+      <a href="/contact">Contact Us</a>
+    </div>
+    <p>&copy; 2023 FreshVision. All rights reserved.</p>
+  </div>
+</body>
+</html>
