@@ -3,40 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Table of Contents Example</title>
+  <title>Freshvision</title>
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='/favicon.ico')}}">
   <link rel="stylesheet" href="{{ url_for('static', filename='/main.css')}}">
-  <style>
-    .table-of-contents {
-      background-color: #4CAF50;
-      color: white;
-      padding: 10px 0;
-      display: flex; /* Use flexbox for layout */
-      justify-content: space-between; /* Space items evenly within the container */
-    }
-
-    .table-of-contents ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      align-items: center; /* Align items vertically in the middle */
-    }
-
-    .table-of-contents li {
-      margin: 0 20px;
-    }
-
-    .table-of-contents a {
-      color: white;
-      text-decoration: none;
-      font-size: 16px;
-    }
-
-    .logout {
-      display: flex;
-      align-items: center; /* Align items vertically in the middle */
-      padding-right: 20px;
-    }
-  </style>
 </head>
 <body>
   <div class="table-of-contents">
@@ -57,29 +26,29 @@
           <p>FreshVision, established in 2023, is a company founded by four high school students dedicated to reducing food waste to achieve SDG 12: Responsible Consumption and Production. Using our special anti-freeze cameras, we take photos of your fresh produce and notify you when it ripens so that you can use your food effectively and don’t let it go to waste. We also suggest recipes you can use so that you don’t worry about what to cook!</p>
         </div>
         <div class="about-image">
-          <img src="freshvision.jpg" alt="About Us Image">
+            <img src="{{ url_for('static', filename='freshvision.jpg') }}" alt="FreshVision">
         </div>
       </div>
 
       
   <div class="team-section">
     <div class="team-member">
-      <img src="alex.jpg" alt="Team Member 1">
+        <img src="{{ url_for('static', filename='alex.jpg') }}" alt="Alexander">
       <h3>Alexander Li</h3>
       <p>Co-Founder</p>
     </div>
     <div class="team-member">
-      <img src="jinay.jpg" alt="Team Member 2">
+        <img src="{{ url_for('static', filename='jinay.jpg') }}" alt="Jinay">
       <h3>Jinay Desai</h3>
       <p>Co-Founder</p>
     </div>
     <div class="team-member">
-      <img src="nupoor.jpg" alt="Team Member 3">
+        <img src="{{ url_for('static', filename='nupoor.jpg') }}" alt="Nupoor">
       <h3>Nupoor Patil</h3>
       <p>Co-Founder</p>
     </div>
     <div class="team-member">
-      <img src="arwin.jpg" alt="Team Member 4">
+        <img src="{{ url_for('static', filename='arwin.jpg') }}" alt="Arwin">
       <h3>Arwin Karir</h3>
       <p>Co-Founder</p>
     </div>
@@ -87,11 +56,11 @@
   </div>
   <div class="footer">
     <div class="social-links">
-      <a href="#" target="_blank">Facebook</a>
-      <a href="#" target="_blank">Twitter</a>
-      <a href="#" target="_blank">Instagram</a>
+      <a href="/about">About Us</a>
+      <a href="/">Dashboard</a>
+      <a href="/contact">Contact Us</a>
     </div>
-    <p>&copy; 2023 Your Website. All rights reserved.</p>
+    <p>&copy; 2023 FreshVision. All rights reserved.</p>
   </div>
 </body>
 </html>

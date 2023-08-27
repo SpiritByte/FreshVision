@@ -6,7 +6,7 @@ from tempfile import mkdtemp
 from functools import wraps
 
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static')
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 
 # Configure session to use filesystem (instead of signed cookies)
@@ -78,6 +78,9 @@ def login():
     else:
         return render_template("login.html")
 
+@app.route('/')
+def index():
+    return render_template('about.html')
 
 @app.route("/logout")
 def logout():
